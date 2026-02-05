@@ -7,21 +7,21 @@ const projects = [
     description:
       "A full-stack event planning and ride management platform built with Spring Boot and React.",
     tech: ["Spring Boot", "React", "MySQL"],
-    github: "https://github.com/SanketKumbhar1190",
+    github: "https://github.com/SanketKumbhar1190/Trail-Sync",
   },
   {
-    title: "Job Portal System",
+    title: "Rock, Paper, Scissors Game",
     description:
-      "Java-based job portal application with filtering, sorting, and validations.",
+      "A console-based Rock, Paper, Scissors game implemented in Java.",
     tech: ["Java", "Collections", "OOP"],
-    github: "https://github.com/SanketKumbhar1190",
+    github: "https://github.com/SanketKumbhar1190/RockPaperScissor",
   },
   {
-    title: "Vehicle Service Booking System",
+    title: "Portfolio Website",
     description:
-      "ASP.NET Core Web API for booking and managing vehicle services.",
-    tech: ["ASP.NET Core", "Web API", "SQL"],
-    github: "https://github.com/SanketKumbhar1190",
+      "A responsive portfolio website built with React and Tailwind CSS.",
+    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/SanketKumbhar1190/sanket-portfolio",
   },
 ];
 
@@ -32,16 +32,17 @@ export default function Projects() {
       className="w-full py-24 bg-lightSurface dark:bg-darkSurface"
     >
       <div className="max-w-6xl mx-auto px-6">
+
+        {/* Section Title */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold mb-12 text-black dark:text-gray-100"
+          className="section-title text-4xl font-bold mb-12 text-black dark:text-gray-100"
         >
           Projects
-
-          <div className="section-divider"></div>
         </motion.h2>
 
+        {/* Project Cards */}
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <motion.div
@@ -49,8 +50,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-white dark:bg-darkCard p-6 rounded-xl shadow hover:-translate-y-1 hover:shadow-xl transition-all duration-300
-"
+              className="bg-white dark:bg-darkCard p-6 rounded-xl shadow hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
             >
               <h3 className="text-xl font-semibold mb-3 text-black dark:text-gray-100">
                 {project.title}
@@ -74,6 +74,7 @@ export default function Projects() {
               <a
                 href={project.github}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-black dark:text-gray-200 font-medium hover:text-primary transition"
               >
                 <FiGithub /> View on GitHub
@@ -81,6 +82,7 @@ export default function Projects() {
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );
