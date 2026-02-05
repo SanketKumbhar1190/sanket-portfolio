@@ -34,5 +34,10 @@ button, a {
   transition: all 0.25s ease;
 }
 
+section {
+  scroll-margin-top: 96px; /* height of navbar */
+}
+
+
 
 
