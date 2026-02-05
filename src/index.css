@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global light / dark theme */
+body {
+  @apply bg-lightBg text-black dark:bg-darkBg dark:text-gray-200;
+}
+
+section {
+  scroll-margin-top: 96px; /* height of navbar */
+}
+
+.section-divider {
+  @apply w-24 h-1 bg-primary rounded-full mb-8;
+}
+section {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+button, a {
+  transition: all 0.25s ease;
+}
+
+
+
