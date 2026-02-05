@@ -13,14 +13,14 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         className="tracking-widest text-sm mb-4 text-gray-500 dark:text-gray-400"
       >
-        SOFTWARE ENGINEER
+        SOFTWARE DEVELOPER
       </motion.p>
 
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="text-5xl md:text-7xl font-extrabold mb-6 text-black dark:text-gray-100"
+        className="text-4xl md:text-7xl font-extrabold mb-6 text-black dark:text-gray-100"
       >
         SANKET KUMBHAR
       </motion.h1>
@@ -31,7 +31,7 @@ export default function Hero() {
         transition={{ delay: 0.2 }}
         className="text-xl md:text-2xl mb-6 text-gray-700 dark:text-gray-300"
       >
-        Software Engineer | Java Full Stack Developer | CDAC Graduate
+        Software Developer | Java Full Stack Developer | CDAC Graduate
       </motion.h2>
 
       <p className="max-w-3xl text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">

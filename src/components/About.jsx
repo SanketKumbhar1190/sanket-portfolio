@@ -17,12 +17,10 @@ export default function About() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-4xl font-bold mb-4 text-black dark:text-gray-100"
+            className="section-title text-4xl font-bold mb-8 text-black dark:text-gray-100"
           >
             Who I Am
           </motion.h2>
-
-          <div className="section-divider"></div>
 
           <motion.p
             initial={{ opacity: 0 }}

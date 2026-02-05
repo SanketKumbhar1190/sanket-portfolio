@@ -38,6 +38,24 @@ section {
   scroll-margin-top: 96px; /* height of navbar */
 }
 
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px; /* GAP between text & line */
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60%;
+  height: 4px;
+  background-color: #22ff55; /* your green */
+  border-radius: 2px;
+}
+
+
 
 
 
