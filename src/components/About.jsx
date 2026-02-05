@@ -3,7 +3,10 @@ import ProfileFrame from "./ProfileFrame";
 
 export default function About() {
   return (
-    <section className="w-full py-24 bg-lightSurface dark:bg-darkSurface">
+    <section
+      id="about"
+      className="w-full py-24 bg-lightSurface dark:bg-darkSurface"
+    >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
         {/* Photo */}
