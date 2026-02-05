@@ -16,7 +16,7 @@ const education = [
   {
     title: "Bachelor of Science in Computer Science (BCS)",
     institute: "University of Pune",
-    year: "2020",
+    year: "2019 - 2022",
     Grade: "77.5 %",
   },
 ];
